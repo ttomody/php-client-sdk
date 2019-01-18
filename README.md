@@ -4,12 +4,12 @@ The Releans SDK enables developers to use Releans Services in their code. You ca
 
 ## How to Build
 
-The generated code has dependencies over external libraries like UniRest. These dependencies are defined in the ```composer.json``` file that comes with the SDK. 
+The Releans code has dependencies over external libraries like UniRest. These dependencies are defined in the ```composer.json``` file that comes with the SDK. 
 To resolve these dependencies, we use the Composer package manager which requires PHP greater than 5.3.2 installed in your system. 
 Visit [https://getcomposer.org/download/](https://getcomposer.org/download/) to download the installer file for Composer and run it in your system. 
 Open command prompt and type ```composer --version```. This should display the current version of the Composer installed if the installation was successful.
 
-* Using command line, navigate to the directory containing the generated files (including ```composer.json```) for the SDK. 
+* Using command line, navigate to the directory containing files (including ```composer.json```) for the SDK. 
 * Run the command ```composer install```. This should install all the required dependencies and create the ```vendor``` directory in your project directory.
 
 ![Building SDK - Step 1](https://apidocs.io/illustration/php?step=installDependencies&workspaceFolder=Releans-PHP)
@@ -38,7 +38,7 @@ Open an IDE for PHP like PhpStorm. The basic workflow presented here is also app
 
 ![Open project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=openIDE&workspaceFolder=Releans-PHP)
 
-Click on ```Open``` in PhpStorm to browse to your generated SDK directory and then click ```OK```.
+Click on ```Open``` in PhpStorm to browse to your Releans SDK directory and then click ```OK```.
 
 ![Open project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=openProject0&workspaceFolder=Releans-PHP)     
 
