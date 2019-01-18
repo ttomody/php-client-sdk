@@ -1,0 +1,31 @@
+{
+    "name": "releans/client",
+    "type": "library",
+    "description": "The Releans SDK enables developers to use Releans Services in their code. You can get started in minutes.",
+    "keywords": ["Releans API","API","SDK"],
+    "homepage": "https://apimatic.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Releans Support",
+            "email": "support@releans.com",
+            "homepage": "https://apimatic.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "mashape/unirest-php": "~3.0.1",
+        "apimatic/jsonmapper": "~1.3.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "ReleansLib\\": "src/"
+        }
+    }
+}
