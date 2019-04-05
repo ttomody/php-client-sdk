@@ -2,21 +2,17 @@
 
 The Releans SDK enables developers to use Releans Services in their code. You can get started in minutes.
 
-## Create Releans Account
-
-First, [sign up for a Releans account](https://platform.releans.com/site/signup) if you don't already have one, and make a note of your API key on the dashboard API page.
-
 ## How to Build
 
-The Releans code has dependencies over external libraries like UniRest. These dependencies are defined in the ```composer.json``` file that comes with the SDK. 
+The generated code has dependencies over external libraries like UniRest. These dependencies are defined in the ```composer.json``` file that comes with the SDK. 
 To resolve these dependencies, we use the Composer package manager which requires PHP greater than 5.3.2 installed in your system. 
 Visit [https://getcomposer.org/download/](https://getcomposer.org/download/) to download the installer file for Composer and run it in your system. 
 Open command prompt and type ```composer --version```. This should display the current version of the Composer installed if the installation was successful.
 
-* Using command line, navigate to the directory containing files (including ```composer.json```) for the SDK. 
+* Using command line, navigate to the directory containing the generated files (including ```composer.json```) for the SDK. 
 * Run the command ```composer install```. This should install all the required dependencies and create the ```vendor``` directory in your project directory.
 
-![Building SDK - Step 1](https://apidocs.io/illustration/php?step=installDependencies&workspaceFolder=Releans-PHP)
+![Building SDK - Step 1](https://apidocs.io/illustration/php?step=installDependencies&workspaceFolder=Releans%20API-PHP)
 
 ### [For Windows Users Only] Configuring CURL Certificate Path in php.ini
 
@@ -34,35 +30,35 @@ CURL used to include a list of accepted CAs, but no longer bundles ANY CA certs.
 
 ## How to Use
 
-The following section explains how to use the Releans library in a new project.
+The following section explains how to use the ReleansAPI library in a new project.
 
 ### 1. Open Project in an IDE
 
 Open an IDE for PHP like PhpStorm. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
 
-![Open project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=openIDE&workspaceFolder=Releans-PHP)
+![Open project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=openIDE&workspaceFolder=Releans%20API-PHP)
 
-Click on ```Open``` in PhpStorm to browse to your Releans SDK directory and then click ```OK```.
+Click on ```Open``` in PhpStorm to browse to your generated SDK directory and then click ```OK```.
 
-![Open project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=openProject0&workspaceFolder=Releans-PHP)     
+![Open project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=openProject0&workspaceFolder=Releans%20API-PHP)     
 
 ### 2. Add a new Test Project
 
 Create a new directory by right clicking on the solution name as shown below:
 
-![Add a new project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=createDirectory&workspaceFolder=Releans-PHP)
+![Add a new project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=createDirectory&workspaceFolder=Releans%20API-PHP)
 
 Name the directory as "test"
 
-![Add a new project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=nameDirectory&workspaceFolder=Releans-PHP)
+![Add a new project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=nameDirectory&workspaceFolder=Releans%20API-PHP)
    
 Add a PHP file to this project
 
-![Add a new project in PHPStorm - Step 3](https://apidocs.io/illustration/php?step=createFile&workspaceFolder=Releans-PHP)
+![Add a new project in PHPStorm - Step 3](https://apidocs.io/illustration/php?step=createFile&workspaceFolder=Releans%20API-PHP)
 
 Name it "testSDK"
 
-![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=nameFile&workspaceFolder=Releans-PHP)
+![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=nameFile&workspaceFolder=Releans%20API-PHP)
 
 Depending on your project setup, you might need to include composer's autoloader in your PHP code to enable auto loading of classes.
 
@@ -72,7 +68,7 @@ require_once "../vendor/autoload.php";
 
 It is important that the path inside require_once correctly points to the file ```autoload.php``` inside the vendor directory created during dependency installations.
 
-![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=projectFiles&workspaceFolder=Releans-PHP)
+![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=projectFiles&workspaceFolder=Releans%20API-PHP)
 
 After this you can add code to initialize the client library and acquire the instance of a Controller class. Sample code to initialize the client library and using controller methods is given in the subsequent sections.
 
@@ -82,23 +78,23 @@ To run your project you must set the Interpreter for your project. Interpreter i
 
 Open ```Settings``` from ```File``` menu.
 
-![Run Test Project - Step 1](https://apidocs.io/illustration/php?step=openSettings&workspaceFolder=Releans-PHP)
+![Run Test Project - Step 1](https://apidocs.io/illustration/php?step=openSettings&workspaceFolder=Releans%20API-PHP)
 
 Select ```PHP``` from within ```Languages & Frameworks```
 
-![Run Test Project - Step 2](https://apidocs.io/illustration/php?step=setInterpreter0&workspaceFolder=Releans-PHP)
+![Run Test Project - Step 2](https://apidocs.io/illustration/php?step=setInterpreter0&workspaceFolder=Releans%20API-PHP)
 
 Browse for Interpreters near the ```Interpreter``` option and choose your interpreter.
 
-![Run Test Project - Step 3](https://apidocs.io/illustration/php?step=setInterpreter1&workspaceFolder=Releans-PHP)
+![Run Test Project - Step 3](https://apidocs.io/illustration/php?step=setInterpreter1&workspaceFolder=Releans%20API-PHP)
 
 Once the interpreter is selected, click ```OK```
 
-![Run Test Project - Step 4](https://apidocs.io/illustration/php?step=setInterpreter2&workspaceFolder=Releans-PHP)
+![Run Test Project - Step 4](https://apidocs.io/illustration/php?step=setInterpreter2&workspaceFolder=Releans%20API-PHP)
 
 To run your project, right click on your PHP file inside your Test project and click on ```Run```
 
-![Run Test Project - Step 5](https://apidocs.io/illustration/php?step=runProject&workspaceFolder=Releans-PHP)
+![Run Test Project - Step 5](https://apidocs.io/illustration/php?step=runProject&workspaceFolder=Releans%20API-PHP)
 
 ## How to Test
 
@@ -126,7 +122,7 @@ API client can be initialized as following.
 ```php
 $oAuthAccessToken = 'oAuthAccessToken'; // OAuth 2.0 Access Token
 
-$client = new ReleansLib\ReleansClient($oAuthAccessToken);
+$client = new ReleansAPILib\ReleansAPIClient($oAuthAccessToken);
 ```
 
 
@@ -154,41 +150,23 @@ $message = $client->getMessage();
 
 
 ```php
-function getAllMessages()
-```
-
-#### Example Usage
-
-```php
-
-$result = $message->getAllMessages();
-
-```
-
-
-### <a name="get_price_of_message"></a>![Method: ](https://apidocs.io/img/method.png ".MessageController.getPriceOfMessage") getPriceOfMessage
-
-> Return cost of sending a message to the number.
-
-
-```php
-function getPriceOfMessage($mobileNumber)
+function getAllMessages($accept)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| mobileNumber |  ``` Required ```  | Mobile number you want to know the price of sending a message. |
+| accept |  ``` Required ```  | TODO: Add a parameter description |
 
 
 
 #### Example Usage
 
 ```php
-$mobileNumber = 'mobileNumber';
+$accept = '*/*';
 
-$result = $message->getPriceOfMessage($mobileNumber);
+$result = $message->getAllMessages($accept);
 
 ```
 
@@ -199,14 +177,17 @@ $result = $message->getPriceOfMessage($mobileNumber);
 
 
 ```php
-function getViewMessage($id)
+function getViewMessage(
+        $id,
+        $accept)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| id |  ``` Required ```  ``` DefaultValue ```  | Id of the message you need to return its details. |
+| id |  ``` Required ```  | TODO: Add a parameter description |
+| accept |  ``` Required ```  | TODO: Add a parameter description |
 
 
 
@@ -214,8 +195,9 @@ function getViewMessage($id)
 
 ```php
 $id = 'id';
+$accept = '*/*';
 
-$result = $message->getViewMessage($id);
+$result = $message->getViewMessage($id, $accept);
 
 ```
 
@@ -227,6 +209,7 @@ $result = $message->getViewMessage($id);
 
 ```php
 function createSendSMSMessage(
+        $accept,
         $senderId,
         $mobileNumber,
         $message)
@@ -236,20 +219,22 @@ function createSendSMSMessage(
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| senderId |  ``` Required ```  ``` DefaultValue ```  | Sender id to send the message from. |
-| mobileNumber |  ``` Required ```  ``` DefaultValue ```  | The mobile number supposed to receive the message. |
-| message |  ``` Required ```  ``` DefaultValue ```  | Message text. |
+| accept |  ``` Required ```  | TODO: Add a parameter description |
+| senderId |  ``` Required ```  | Sender id to send the message from. |
+| mobileNumber |  ``` Required ```  | The mobile number supposed to receive the message. |
+| message |  ``` Required ```  | Message text. |
 
 
 
 #### Example Usage
 
 ```php
-$senderId = 'sender-id';
-$mobileNumber = 'mobile-number';
+$accept = 'Accept';
+$senderId = 'senderId';
+$mobileNumber = 'mobileNumber';
 $message = 'message';
 
-$result = $message->createSendSMSMessage($senderId, $mobileNumber, $message);
+$result = $message->createSendSMSMessage($accept, $senderId, $mobileNumber, $message);
 
 ```
 
@@ -272,14 +257,17 @@ $sender = $client->getSender();
 
 
 ```php
-function getSenderNameDetails($id)
+function getSenderNameDetails(
+        $id,
+        $accept)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| id |  ``` Required ```  ``` DefaultValue ```  | The sender id you want its details |
+| id |  ``` Required ```  | TODO: Add a parameter description |
+| accept |  ``` Required ```  | TODO: Add a parameter description |
 
 
 
@@ -287,8 +275,9 @@ function getSenderNameDetails($id)
 
 ```php
 $id = 'sender-id';
+$accept = '*/*';
 
-$result = $sender->getSenderNameDetails($id);
+$result = $sender->getSenderNameDetails($id, $accept);
 
 ```
 
@@ -299,23 +288,30 @@ $result = $sender->getSenderNameDetails($id);
 
 
 ```php
-function createSenderName($senderName)
+function createSenderName(
+        $accept,
+        $contentType,
+        $body)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| senderName |  ``` Required ```  ``` DefaultValue ```  | Name you want to register as Sender Name |
+| accept |  ``` Required ```  | TODO: Add a parameter description |
+| contentType |  ``` Required ```  | TODO: Add a parameter description |
+| body |  ``` Required ```  | TODO: Add a parameter description |
 
 
 
 #### Example Usage
 
 ```php
-$senderName = 'Your sender name';
+$accept = 'text/plain';
+$contentType = 'text/plain';
+$body = 'Your sender name';
 
-$result = $sender->createSenderName($senderName);
+$result = $sender->createSenderName($accept, $contentType, $body);
 
 ```
 
@@ -326,14 +322,23 @@ $result = $sender->createSenderName($senderName);
 
 
 ```php
-function getAllSenders()
+function getAllSenders($accept)
 ```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| accept |  ``` Required ```  | TODO: Add a parameter description |
+
+
 
 #### Example Usage
 
 ```php
+$accept = '*/*';
 
-$result = $sender->getAllSenders();
+$result = $sender->getAllSenders($accept);
 
 ```
 
@@ -356,14 +361,23 @@ $balance = $client->getBalance();
 
 
 ```php
-function getBalance()
+function getBalance($accept)
 ```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| accept |  ``` Required ```  | TODO: Add a parameter description |
+
+
 
 #### Example Usage
 
 ```php
+$accept = 'text/plain';
 
-$result = $balance->getBalance();
+$result = $balance->getBalance($accept);
 
 ```
 
